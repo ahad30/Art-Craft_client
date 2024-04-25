@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "estate_title": "Luxurious Beachfront Villa",
+    "category_name": "villa",
+    "description": "A stunning villa nestled on the shores of a pristine beach, offering breathtaking views and unparalleled luxury.",
+    "price": 2500000,
+    "status": "sale",
+    "area": 4000,
+    "location": "Miami, Florida",
+    "facilities": ["ocean view", "private beach access", "swimming pool"],
+    "image": "https://i.ibb.co/QrmJWJV/Villa-1.jpg"
+  },
+  {
+    "id": 2,
+    "estate_title": "Magnificent Seaside Mansion",
+    "category_name": "mansion",
+    "description": "An exquisite mansion overlooking the sea, boasting grandeur, elegance, and unmatched beauty.",
+    "price": 5000000,
+    "status": "sale",
+    "area": 8000,
+    "location": "Malibu, California",
+    "facilities": ["spacious garden", "infinity pool", "private dock"],
+    "image": "https://i.ibb.co/GPGfKZH/Mansions.jpg"
+  },
+  {
+    "id": 3,
+    "estate_title": "Luxury Beach Resort",
+    "category_name": "beach-resort",
+    "description": "A lavish beachfront resort offering world-class amenities, impeccable service, and breathtaking ocean views.",
+    "price": 500,
+    "status": "rent",
+    "area": 2500,
+    "location": "Bora Bora, French Polynesia",
+    "facilities": ["overwater bungalows", "private beach cabanas", "spa"],
+    "image": "https://i.ibb.co/F6hxhMD/Beach-Resort.jpg"
+  },
+  {
+    "id": 4,
+    "estate_title": "Exotic Island Resort",
+    "category_name": "resort",
+    "description": "Escape to paradise on this secluded island resort, where luxury meets natural beauty.",
+    "price": 700,
+    "status": "rent",
+    "area": 1500,
+    "location": "Seychelles",
+    "facilities": ["beachfront villas", "infinity pool", "scuba diving"],
+    "image": "https://i.ibb.co/hRkmNvm/Resort-1.jpg"
+  },
+  {
+    "id": 5,
+    "estate_title": "Prestigious Penthouse",
+    "category_name": "penthouse",
+    "description": "An opulent penthouse apartment offering panoramic city views and unrivaled sophistication.",
+    "price": 1200000,
+    "status": "sale",
+    "area": 2000,
+    "location": "New York City, New York",
+    "facilities": ["rooftop terrace", "concierge service", "gym"],
+    "image": "https://i.ibb.co/0CJ5BFw/Penthouse-1.jpg"
+  },
+  {
+    "id": 6,
+    "estate_title": "Secluded Mountain Villa",
+    "category_name": "villa",
+    "description": "Discover serenity in this mountain villa retreat, surrounded by majestic peaks and lush forests.",
+    "price": 3000000,
+    "status": "sale",
+    "area": 6000,
+    "location": "Aspen, Colorado",
+    "facilities": ["private helipad", "hot tub", "ski-in/ski-out access"],
+    "image": "https://i.ibb.co/7YQVwLH/Villa-2.jpg"
+  },
+  {
+    "id": 7,
+    "estate_title": "Private Island Paradise",
+    "category_name": "resort",
+    "description": "Experience ultimate luxury on your own private island, where every desire is catered to amidst stunning natural beauty.",
+    "price": 10000000,
+    "status": "sale",
+    "area": 2000,
+    "location": "Caribbean Sea",
+    "facilities": ["exclusive beachfront", "private villas", "yacht dock"],
+    "image": "https://i.ibb.co/BjC3TPM/Private-Island-Resort.jpg"
+  },
+  {
+    "id": 8,
+    "estate_title": "Tropical Island Retreat",
+    "category_name": "resort",
+    "description": "Indulge in paradise at this exclusive tropical island resort, where every moment is a celebration of luxury and relaxation.",
+    "price": 900,
+    "status": "rent",
+    "area": 4000,
+    "location": "Maui, Hawaii",
+    "facilities": ["private villas", "beachfront dining", "surfing lessons"],
+    "image": "https://i.ibb.co/0DZ8FTZ/Resort-2.jpg"
+  },
+  {
+    "id": 9,
+    "estate_title": "Modern City Penthouse",
+    "category_name": "penthouse",
+    "description": "Experience urban luxury at its finest in this sleek and contemporary city penthouse, offering unparalleled views and amenities.",
+    "price": 1500000,
+    "status": "sale",
+    "area": 2500,
+    "location": "Los Angeles, California",
+    "facilities": ["private elevator", "rooftop pool", "home automation"],
+    "image": "https://i.ibb.co/N2MmCnV/Penthouse-2.jpg"
+  }
+]
