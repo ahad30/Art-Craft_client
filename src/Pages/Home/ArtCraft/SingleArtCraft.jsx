@@ -4,12 +4,15 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types'
 
 
-const Property = ({property}) => {
-const {id,estate_title, category_name, status ,location , facilities ,image} = property
+const SingleArtCraft = ({artCraftItem}) => {
+console.log(artCraftItem)
+const { _id , image, itemName, subcategoryName, shortDescription, price, rating, customization, processingTime, stockStatus} = artCraftItem
 
   return (
   <div className=''>
-<div  className="overflow-hidden rounded-3xl shadow transition hover:shadow-lg">
+
+  <p className='text-black'>{itemName}</p>
+{/* <div  className="overflow-hidden rounded-3xl shadow transition hover:shadow-lg">
 <div className=''>
 <img
     alt=""
@@ -50,14 +53,14 @@ const {id,estate_title, category_name, status ,location , facilities ,image} = p
     </div>
 
   </div>
-</div>
+</div> */}
 </div>
   )
 }
 
 
-Property.propTypes = {
-property: PropTypes.object.isRequired
+SingleArtCraft.propTypes = {
+  artCraftItem: PropTypes.object.isRequired
 }
 
-export default Property;
+export default SingleArtCraft;

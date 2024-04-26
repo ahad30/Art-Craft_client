@@ -23,6 +23,7 @@ export const routes = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
+        loader: () => fetch('http://localhost:5000/artCraft')
       },
 
       {

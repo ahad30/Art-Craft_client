@@ -22,7 +22,7 @@ console.log(user)
     const processingTime = parseFloat(form.processingTime.value);
     const stockStatus = form.stockStatus.value;
     const userEmail = user.email;
-    const userName = form.userName.value;
+    const userName = user.displayName;
 
     const newCraftItem = { image, itemName, subcategoryName, shortDescription, price, rating, customization, processingTime, stockStatus, userEmail, userName };
   //  console.log(newCraftItem);
