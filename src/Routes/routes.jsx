@@ -10,6 +10,9 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import Price from "../Pages/Price/Price";
+import AllArtCraftItem from "../Pages/AllArtCraftItem/AllArtCraftItem";
+import AddArtCarftItem from "../Pages/AddArtCarftItem/AddArtCarftItem";
+import MyListItems from "../Pages/MyListItems/MyListItems";
 
 export const routes = createBrowserRouter([
   {
@@ -23,12 +26,31 @@ export const routes = createBrowserRouter([
       },
 
       {
+        path: "/allArt&Craft",
+        element:  <AllArtCraftItem/>    ,
+      },
+
+      {
+        path: "/addItem",
+        element: 
+       <PrivateRoute>
+         <AddArtCarftItem/>
+       </PrivateRoute>
+      },
+      {
+        path: "/myList",
+        element: 
+       <PrivateRoute>
+         <MyListItems/>
+       </PrivateRoute>
+      },
+
+      {
         path: "/updateProfile",
         element: 
        <PrivateRoute>
          <UpdateProfile/>
        </PrivateRoute>
-       ,
       },
       {
         path: "/propertyDetails/:id",

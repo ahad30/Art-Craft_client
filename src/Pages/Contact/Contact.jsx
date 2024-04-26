@@ -1,17 +1,26 @@
 import { Button } from "@material-tailwind/react";
 import { Helmet } from "react-helmet-async";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
+import { Typewriter } from 'react-simple-typewriter'
 import "leaflet/dist/leaflet.css";
 
 const Contact = () => {
 return (
 <section className="">
-<Helmet>
-      <title>Luxury | Contact </title>
-    </Helmet>
-  <h1 className="text-center font-bold text-3xl mt-10">Contact Us</h1>
-  <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-    <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+
+  <div className="flex justify-center text-2xl font-bold mt-10">
+  <Typewriter
+            words={['Contact Us', 'See Our Location']}
+            loop={5}
+            cursor
+            cursorStyle='_'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+  </div>
+  <div className="mx-auto  px-4 py-7 sm:px-6 lg:px-8">
+    {/* <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
       <div className="lg:col-span-2 lg:py-12">
         <p className="max-w-xl text-lg">
           At the same time, the fact that we are wholly owned and totally independent from
@@ -82,9 +91,9 @@ return (
           </div>
         </form>
       </div>
-    </div>
+    </div> */}
 
-   <div className=" mt-10">
+   <div className="">
    <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} className="lg:w-full h-[100vh] w-[90vw]">
   <TileLayer
     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

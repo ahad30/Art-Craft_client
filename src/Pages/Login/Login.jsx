@@ -59,13 +59,13 @@ const Login = () => {
 
 <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
 <Helmet>
-    <title>Luxury | Login</title>
+    <title>Art & Craft | Login</title>
 </Helmet>
   <div className="mx-auto max-w-lg text-center">
     <h1 className="text-2xl font-bold sm:text-3xl">Log in here!</h1>
 
     <p className="mt-4 text-gray-500">
-      Start to build your dream luxury palace 
+      Dive into world of paints & craft 
     </p>
   </div>
 

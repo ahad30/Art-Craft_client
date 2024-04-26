@@ -7,7 +7,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Spinner } from "@material-tailwind/react";
 
 
-const UpdateProfile = () => {
+const  UpdateProfile = () => {
 const [loading, setLoading] = useState(false);
  const {user} = useContext(AuthContext);
  const location = useLocation();

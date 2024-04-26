@@ -5,12 +5,14 @@ import {
   MobileNav,
   Typography,
   IconButton,
-  Button,
-  Tooltip
+  Button
 } from "@material-tailwind/react";
 import { Link, NavLink ,useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Providers/AuthProvider";
+
 import toast  from 'react-hot-toast';
+import { Tooltip } from "react-tooltip";
+import { SwitchWithDarkMode } from "../../../Pages/Home/SwitchWithDarkMode";
 
 const Header = () => {
     const [openNav, setOpenNav] = React.useState(false);
@@ -176,19 +178,23 @@ const Header = () => {
             </div>
 
             <div className="flex items-center gap-4 ">
-              <div className="mr-2 hidden lg:block">{navList}</div>   
-     
+              <div className="mr-2 hidden lg:block">{navList}</div>       
             </div>
+        
+      
 
             <div className="flex items-center gap-2">
+            <div className="mr-2 hidden lg:block">
+                <SwitchWithDarkMode></SwitchWithDarkMode>
+              </div>   
 
             {
-                    user ? 
+               user ? 
                   <>
                   <div className="flex items-center space-x-2">
-                <Tooltip content= {user.displayName}>
-                <img  src={user.photoURL} alt="" className="w-[60px] h-[60px] object-cover rounded-full"/>
-                </Tooltip>
+                
+                <img  data-tooltip-id="my-tooltip"  data-tooltip-content={user.displayName}  src={user.photoURL} alt="" className="w-[60px] h-[60px] object-cover rounded-full"/>
+                <Tooltip id="my-tooltip" />
              
                     <Button onClick={handleSignOut} className={`bg-[#59C6D2]`}>Log out</Button>
                     </div>
