@@ -72,7 +72,7 @@ const Header = () => {
             };
           }}
         to="/allArt&Craft" className="flex items-center text-[#150B2BB3]">
-         All Art &craft Items
+         All Art & Craft Items
         </NavLink>
         </Typography>
 

@@ -11,7 +11,7 @@ return (
   <div className="flex justify-center text-2xl font-bold mt-10">
   <Typewriter
             words={['Contact Us', 'See Our Location']}
-            loop={5}
+            loop={true}
             cursor
             cursorStyle='_'
             typeSpeed={70}
@@ -94,7 +94,7 @@ return (
     </div> */}
 
    <div className="">
-   <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} className="lg:w-full h-[100vh] w-[90vw]">
+   <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} className="lg:w-full h-[400px]">
   <TileLayer
     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
