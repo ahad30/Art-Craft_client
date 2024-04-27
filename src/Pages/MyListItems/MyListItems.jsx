@@ -1,24 +1,127 @@
 import  { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Providers/AuthProvider';
+import { CiStar } from 'react-icons/ci';
+import { Link } from 'react-router-dom';
+import { MdEdit ,MdDelete} from "react-icons/md";
+import Swal from 'sweetalert2';
 
 const MyListItems = () => {
 const {user} = useContext(AuthContext)
-const [items , setItems] = useState([]);
+const [items,setItems] = useState([]);
+
 
 useEffect(() => {
-   fetch(`http://localhost:5000/artCraft/${user?.email}`)
-   .then((response) => response.json())
-   .then((data) => {
-        console.log(data)
+   fetch(`http://localhost:5000/myArtCraft/${user?.email}`)
+   .then((res) => res.json())
+   .then((data) => { setItems(data) 
+    console.log(data)}) 
+  .catch((error) => {
+    console.error("Error fetching data:", error);
   })
-
-  
 }, []);
+
+
+const handleDelete = _id => {
+  console.log(_id);
+  Swal.fire({
+      title: 'Are you sure?', 
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+  }).then((result) => {
+      if (result.isConfirmed) {
+          fetch(`http://localhost:5000/deleteItem/${_id}`, {
+              method: 'DELETE'
+          })
+              .then(res => res.json())
+              .then(data => {
+                  console.log(data);
+                  if (data.deletedCount > 0) {
+                      Swal.fire(
+                          'Deleted!',
+                          'Your Coffee has been deleted.',
+                          'success'
+                      )
+                      const remaining = items.filter(item => item._id !== _id);
+                      setItems(remaining);
+                  }
+              })
+
+      }
+  })
+}
+
+
 
 
 
   return (
-    <div>MyListItems</div>
+    <div className='mb-5'>
+    <h1 className='text-center text-3xl font-bold mt-5 mb-5'>My Craft Items</h1>
+    {items.length === 0 ? (
+        <p className='text-center text-red-400 font-bold'>No data found.</p>
+    ) : (
+        <div
+            className='w-[98%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'
+        >
+            {
+              items.map((item) => (
+              <div key={item._id}>   <div className=''>
+    <div  className="overflow-hidden rounded-3xl shadow transition hover:shadow-lg">
+    <div className=''>
+    <img
+        alt=""
+        src={item?.image}
+        className=" w-[400px] h-[314px] p-10 animate__animated animate__heartBeat"
+      />
+    
+    </div>
+      <div className="bg-white space-y-3 p-4 sm:p-6">
+    
+      <h1 className='font-bold'>{item?.itemName}</h1>
+      <div className='flex items-center justify-between'>
+     
+      <p>$ <span className='text-[#23BE0A] font-bold'>{item?.price}</span> </p>
+     <div className='flex items-center space-x-1'>
+     <CiStar/>
+      <p className='text-sm  p-1 text-black  me-2'>{item?.rating}</p>
+     </div>
+      </div>
+    
+        <div className='flex items-center justify-between gap-4 text-[#878787] mb-3'>
+            <div className=''>
+              <p className='text-sm'>#{item?.customization}</p>
+            </div>
+            <div>
+            <p className='text-sm'>#{item?.stockStatus}</p>
+            </div>
+            <div className='flex items-center gap-x-3'>
+
+            <Link to= {`/artCraftDetails/${item?._id}`}>
+             <button> <MdEdit /></button>
+            </Link>
+                  
+          <div>
+          <button onClick={() => handleDelete(item?._id)}>  <MdDelete /></button>
+          </div>
+          
+
+            
+            </div>        
+        </div>
+    
+      </div>
+    </div>
+    </div></div>
+            ))
+            }
+        </div>
+    )}
+ 
+</div>
   )
 }
 

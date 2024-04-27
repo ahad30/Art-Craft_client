@@ -6,7 +6,7 @@ import  { AuthContext } from "../../Providers/AuthProvider";
 
 const AddCraftItem = () => {
    const {user} = useContext(AuthContext);
-console.log(user)
+  //  console.log(user)
 
   const handleAddCraftItem = event => {
     event.preventDefault();
@@ -80,8 +80,16 @@ console.log(user)
             <div className="form-control mb-8">
               <label className="label">
                 <span className="font-bold mb-3">Subcategory Name</span>
-              </label>
-              <input type="text" required name="subcategoryName" placeholder="Subcategory Name" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
+              </label>          
+              <select name="subcategoryName" required className="select rounded-lg border-gray-200 p-3 text-sm w-full">
+                <option value="">Select</option>
+                <option value="Landscape Painting">Landscape Painting</option>
+                <option value="Portrait Drawing">Portrait Drawing</option>
+                <option value="Watercolour Painting">Watercolour Painting</option>
+                <option value="Oil Painting">Oil Painting</option>
+                <option value="Charcoal Sketching">Charcoal Sketching</option>
+                <option value="Cartoon Drawing"> Cartoon Drawing</option>
+              </select>
             </div>
           
             {/* Price */}
