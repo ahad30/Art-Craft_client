@@ -54,10 +54,6 @@ const handleDelete = _id => {
   })
 }
 
-
-
-
-
   return (
     <div className='mb-5'>
     <h1 className='text-center text-3xl font-bold mt-5 mb-5'>My Craft Items</h1>
@@ -100,7 +96,7 @@ const handleDelete = _id => {
             </div>
             <div className='flex items-center gap-x-3'>
 
-            <Link to= {`/artCraftDetails/${item?._id}`}>
+            <Link to= {`/updateItem/${item?._id}`}>
              <button> <MdEdit /></button>
             </Link>
                   

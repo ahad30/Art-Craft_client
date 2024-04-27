@@ -12,6 +12,7 @@ import AllArtCraftItem from "../Pages/AllArtCraftItem/AllArtCraftItem";
 import AddArtCarftItem from "../Pages/AddArtCarftItem/AddArtCarftItem";
 import MyListItems from "../Pages/MyListItems/MyListItems";
 import ArtCraftDetails from "../Pages/Home/ArtCraftDetails/ArtCraftDetails";
+import UpdateItem from "../Pages/UpdateItem/UpdateItem";
 
 export const routes = createBrowserRouter([
   {
@@ -46,11 +47,12 @@ export const routes = createBrowserRouter([
       },
 
       {
-        path: "/updateItem",
+        path: "/updateItem/:id",
         element: 
        <PrivateRoute>
-         <UpdateProfile/>
-       </PrivateRoute>
+         <UpdateItem/>
+       </PrivateRoute>,
+        loader: ({ params }) => fetch(`http://localhost:5000/artCraft/${params.id}`)
       },
 
       {
