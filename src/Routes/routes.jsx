@@ -5,14 +5,13 @@ import HomePage from "../Pages/Home/HomePage";
 import ErrorPage from "../components/common/ErrorPage/ErrorPage";
 import Contact from "../Pages/Contact/Contact";
 import UpdateProfile from "../Pages/Update-Profile/UpdateProfile";
-import PropertyDetails from "../Pages/Home/Property_Details/PropertyDetails";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
-import Price from "../Pages/Price/Price";
 import AllArtCraftItem from "../Pages/AllArtCraftItem/AllArtCraftItem";
 import AddArtCarftItem from "../Pages/AddArtCarftItem/AddArtCarftItem";
 import MyListItems from "../Pages/MyListItems/MyListItems";
+import ArtCraftDetails from "../Pages/Home/ArtCraftDetails/ArtCraftDetails";
 
 export const routes = createBrowserRouter([
   {
@@ -53,30 +52,32 @@ export const routes = createBrowserRouter([
          <UpdateProfile/>
        </PrivateRoute>
       },
+
       {
-        path: "/propertyDetails/:id",
+        path: "/artCraftDetails/:id",
         element: 
        <PrivateRoute>
-        <PropertyDetails/>
-       </PrivateRoute> 
-        ,
-        loader:() => fetch('/categories.json')
+        <ArtCraftDetails/>
+       </PrivateRoute>,
+        loader: ({ params }) => fetch(`http://localhost:5000/artCraft/${params.id}`)
       },
+
       {
         path: "/login",
         element: <Login/>,
       },
+
       {
         path: "/register",
         element: <Register/>,
       },
 
-      {
-        path: "/price",
-        element: <PrivateRoute>
-          <Price/>
-        </PrivateRoute>,
-      },
+      // {
+      //   path: "/price",
+      //   element: <PrivateRoute>
+      //     <Price/>
+      //   </PrivateRoute>,
+      // },
 
       {
         path: "/contact",

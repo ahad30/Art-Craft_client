@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 import { CiStar } from "react-icons/ci";
 
 const SingleArtCraft = ({artCraftItem}) => {
-// console.log(artCraftItem)
-const { _id , image, itemName, subcategoryName, shortDescription, price, rating, customization, processingTime, stockStatus} = artCraftItem
+console.log(artCraftItem)
+const { _id , image, itemName, subcategoryName, price, rating} = artCraftItem
 
   return (
 
@@ -36,7 +36,7 @@ const { _id , image, itemName, subcategoryName, shortDescription, price, rating,
               <p className='text-sm'>#{subcategoryName}</p>
             </div>
             <div className='flex items-center gap-1'>
-            <Link to= {`/propertyDetails/${_id}`}>
+            <Link to= {`/artCraftDetails/${_id}`}>
               <button className='text-sm bg-[#23BE0A] p-2 text-white rounded-md'>View Details</button>
             </Link>
             </div>        

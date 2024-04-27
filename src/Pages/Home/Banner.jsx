@@ -22,11 +22,11 @@ const Banner = () => {
   >
       <SwiperSlide>
       <section
-    className="bg-gray-900 text-white mb-10  bg-no-repeat bg-cover 
+    className="bg-gray-900 text- mb-10  bg-no-repeat bg-cover 
     h-[600px] lg:h-[500px] bg-center"  style={{backgroundImage: `url(${Image1})`}}>
     <div className="mx-auto  px-4 py-32 lg:flex lg:h-screen lg:items-center">
         <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-white bg-clip-text text-3xl font-bold text-transparent sm:text-4xl ">
+            <h1 className="text-black bg-clip-text text-3xl font-bold sm:text-4xl">
           Unique Arts & Crafts Here
             </h1>
             <p className="mx-auto mt-4 max-w-xl sm:text-base/relaxed text-black">
@@ -41,7 +41,7 @@ const Banner = () => {
                 </a>
                 </div>
                 <div>
-                <a className="block w-full  px-6 py-3 bg-transparent  font-bold border border-white lg:text-lg  text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto rounded-full"
+                <a className="block w-full  px-6 py-3 bg-transparent  font-bold border border-black lg:text-lg  text-black focus:outline-none focus:ring active:text-opacity-75 sm:w-auto rounded-full"
                     href="">
                    Our Feedback
                 </a>
@@ -53,11 +53,11 @@ const Banner = () => {
       </SwiperSlide>
       <SwiperSlide>
       <section
-    className="bg-gray-900 text-white mb-10  bg-no-repeat bg-cover 
+    className="bg-gray-900 text-black mb-10  bg-no-repeat bg-cover 
     h-[600px] lg:h-[500px] bg-center"  style={{backgroundImage: `url(${Image2})`}}>
     <div className="mx-auto  px-4 py-32 lg:flex lg:h-screen lg:items-center">
         <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-white bg-clip-text text-3xl font-bold text-transparent sm:text-4xl ">
+            <h1 className="text-black bg-clip-text text-3xl font-bold sm:text-4xl ">
            Unique Arts & Crafts Here
             </h1>
             <p className="mx-auto mt-4 max-w-xl sm:text-base/relaxed text-black">
@@ -72,7 +72,7 @@ const Banner = () => {
                 </a>
                 </div>
                 <div>
-                <a className="block w-full  px-6 py-3 bg-transparent  font-bold border border-white lg:text-lg  text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto rounded-full"
+                <a className="block w-full  px-6 py-3 bg-transparent  font-bold border border-black lg:text-lg  text-black focus:outline-none focus:ring active:text-opacity-75 sm:w-auto rounded-full"
                     href="">
                    Our Feedback
                 </a>
@@ -85,11 +85,11 @@ const Banner = () => {
   </SwiperSlide>
       <SwiperSlide>
       <section
-    className="bg-gray-900 text-white mb-10  bg-no-repeat bg-cover 
+    className="bg-gray-900 text-black mb-10  bg-no-repeat bg-cover 
     h-[600px] lg:h-[500px] bg-center"  style={{backgroundImage: `url(${Image3})`}}>
     <div className="mx-auto  px-4 py-32 lg:flex lg:h-screen lg:items-center">
         <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-white bg-clip-text text-3xl font-bold text-transparent sm:text-4xl ">
+            <h1 className="text-black bg-clip-text text-3xl font-bold sm:text-4xl ">
            Unique Arts & Crafts Here
             </h1>
             <p className="mx-auto mt-4 max-w-xl sm:text-base/relaxed text-black">
@@ -104,7 +104,7 @@ const Banner = () => {
                 </a>
                 </div>
                 <div>
-                <a className="block w-full  px-6 py-3 bg-transparent  font-bold border border-white lg:text-lg  text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto rounded-full"
+                <a className="block w-full  px-6 py-3 bg-transparent  font-bold border border-black lg:text-lg  text-black focus:outline-none focus:ring active:text-opacity-75 sm:w-auto rounded-full"
                     href="">
                    Our Feedback
                 </a>

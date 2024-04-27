@@ -66,7 +66,7 @@ console.log(user)
               <label className="label">
                 <span className="font-bold mb-3">Image URL</span>
               </label>
-              <input type="text" name="image" placeholder="Image URL" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
+              <input type="text" required name="image" placeholder="Image URL" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
             </div>
 
             {/* Item Name */}
@@ -74,14 +74,14 @@ console.log(user)
               <label className="label">
                 <span className="font-bold mb-3">Item Name</span>
               </label>
-              <input type="text" name="itemName" placeholder="Item Name" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
+              <input type="text" required name="itemName" placeholder="Item Name" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
             </div>
             {/* Subcategory Name */}
             <div className="form-control mb-8">
               <label className="label">
                 <span className="font-bold mb-3">Subcategory Name</span>
               </label>
-              <input type="text" name="subcategoryName" placeholder="Subcategory Name" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
+              <input type="text" required name="subcategoryName" placeholder="Subcategory Name" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
             </div>
           
             {/* Price */}
@@ -89,21 +89,21 @@ console.log(user)
               <label className="label">
                 <span className="font-bold mb-3">Price</span>
               </label>
-              <input type="number" name="price" placeholder="Price" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
+              <input type="number" required name="price" placeholder="Price" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
             </div>
             {/* Rating */}
             <div className="form-control mb-8">
               <label className="label">
                 <span className="font-bold mb-3">Rating</span>
               </label>
-              <input type="text" name="rating" placeholder="Rating" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
+              <input type="text" required name="rating" placeholder="Rating" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
             </div>
             {/* Customization */}
             <div className="form-control mb-8">
               <label className="label">
                 <span className="font-bold mb-3">Customization</span>
               </label>
-              <select name="customization" className="select rounded-lg border-gray-200 p-3 text-sm w-full">
+              <select name="customization" required className="select rounded-lg border-gray-200 p-3 text-sm w-full">
                 <option value="">Select</option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
@@ -114,14 +114,14 @@ console.log(user)
               <label className="label">
                 <span className="font-bold mb-3">Processing Time</span>
               </label>
-              <input type="text" name="processingTime" placeholder="Processing Time" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
+              <input type="text" required name="processingTime" placeholder="Processing Time" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
             </div>
             {/* Stock Status */}
             <div className="form-control mb-8">
               <label className="label">
                 <span className="font-bold mb-3">Stock Status</span>
               </label>
-              <select name="stockStatus" className="select rounded-lg border-gray-200 p-3 text-sm w-full">
+              <select name="stockStatus" required className="select rounded-lg border-gray-200 p-3 text-sm w-full">
                 <option value="">Select</option>
                 <option value="In stock">In stock</option>
                 <option value="Made to Order">Made to Order</option>
@@ -132,22 +132,9 @@ console.log(user)
               <label className="label">
                 <span className="font-bold mb-3">Short Description</span>
               </label>
-              <textarea name="shortDescription" placeholder="Short Description" className="textarea  rounded-lg border-gray-200 p-3 text-sm w-full"></textarea>
+              <textarea name="shortDescription" required placeholder="Short Description" className="textarea  rounded-lg border-gray-200 p-3 text-sm w-full"></textarea>
             </div>
-            {/* User Email */}
-            {/* <div className="form-control mb-8">
-              <label className="label">
-                <span className="font-bold mb-3">User Email</span>
-              </label>
-              <input type="email" name="userEmail" placeholder="User Email" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
-            </div> */}
-            {/* User Name */}
-            <div className="form-control mb-8">
-              <label className="label">
-                <span className="font-bold mb-3">User Name</span>
-              </label>
-              <input type="text" name="userName" placeholder="User Name" className="input rounded-lg border-gray-200 p-3 text-sm w-full" />
-            </div>
+
             </div>
             {/* Submit Button */}
 <div className="flex justify-end">
