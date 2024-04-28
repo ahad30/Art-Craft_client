@@ -4,7 +4,6 @@ import MainLayout from "../components/layouts/MainLayout/MainLayout";
 import HomePage from "../Pages/Home/HomePage";
 import ErrorPage from "../components/common/ErrorPage/ErrorPage";
 import Contact from "../Pages/Contact/Contact";
-import UpdateProfile from "../Pages/Update-Profile/UpdateProfile";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
