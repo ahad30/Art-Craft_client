@@ -28,8 +28,20 @@ export const routes = createBrowserRouter([
 
       {
         path: "/allArt&Craft",
-        element:  <AllArtCraftItem/>    ,
+        element:  <AllArtCraftItem/>,
+        loader: () => fetch('http://localhost:5000/artCraft')
       },
+
+      {
+        path: "/artCraftDetails/:id",
+        element: 
+       <PrivateRoute>
+        <ArtCraftDetails/>
+       </PrivateRoute>,
+        loader: ({ params }) => fetch(`http://localhost:5000/artCraft/${params.id}`)
+      },
+
+
 
       {
         path: "/addItem",
@@ -55,14 +67,7 @@ export const routes = createBrowserRouter([
         loader: ({ params }) => fetch(`http://localhost:5000/artCraft/${params.id}`)
       },
 
-      {
-        path: "/artCraftDetails/:id",
-        element: 
-       <PrivateRoute>
-        <ArtCraftDetails/>
-       </PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/artCraft/${params.id}`)
-      },
+     
 
       {
         path: "/login",
@@ -73,13 +78,6 @@ export const routes = createBrowserRouter([
         path: "/register",
         element: <Register/>,
       },
-
-      // {
-      //   path: "/price",
-      //   element: <PrivateRoute>
-      //     <Price/>
-      //   </PrivateRoute>,
-      // },
 
       {
         path: "/contact",
