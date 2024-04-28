@@ -1,5 +1,6 @@
 import { Button } from "@material-tailwind/react";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link, useLoaderData } from "react-router-dom"
 
 
@@ -13,6 +14,9 @@ const [allArtItems , setAllArtItems] = useState(loadedItems);
   return (
 
 <div className="overflow-x-auto max-w-4xl mx-auto">
+<Helmet>
+        <title>Art & Craft | All Item</title>
+      </Helmet>
   <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm border-2">
     <thead className="">
       <tr className="">

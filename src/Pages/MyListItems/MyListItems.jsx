@@ -70,7 +70,7 @@ const MyListItems = () => {
           className='rounded-lg border-2 border-gray-500 p-2'
           onChange={(e) => setFilter(e.target.value)}
         >
-          <option value=''>Select</option>
+          <option value=''>Customization</option>
           <option value='All'>All</option>
           <option value='yes'>Yes</option>
           <option value='no'>No</option>

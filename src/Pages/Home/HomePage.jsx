@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import Contact from "../Contact/Contact";
 import ArtCraft from "./ArtCraft/ArtCraft";
 import { useLoaderData } from "react-router-dom";
+import Blog from "./Blog/Blog";
 
 const HomePage = () => {
 
@@ -16,6 +17,7 @@ const HomePage = () => {
      <ArtCraft
      loadedItems = {loadedItems}
      ></ArtCraft>
+     <Blog></Blog>
      <Contact></Contact>
     </div>
   );
