@@ -1,5 +1,4 @@
 import { Button } from '@material-tailwind/react';
-import React from 'react'
 import { Helmet } from 'react-helmet-async';
 import { useLoaderData } from 'react-router-dom'
 import Swal from 'sweetalert2';
