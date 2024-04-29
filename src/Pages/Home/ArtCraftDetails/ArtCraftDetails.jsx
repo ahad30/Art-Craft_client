@@ -30,7 +30,7 @@ const { image, itemName, subcategoryName, shortDescription, price, rating, custo
         <div className='space-y-6 lg:space-y-3'>
           <p>$ <span className='text-[#23BE0A] font-bold'>{price}</span> </p>
           <p className=' text-black  me-2'><span className='font-bold'>Stock Status:</span> {stockStatus}</p>
-          <p><span className='font-bold'>Time:</span>{processingTime}h  </p>
+          <p><span className='font-bold'>Time: </span>{processingTime} days  </p>
           <p>#{subcategoryName}</p>
         </div>
       </div>

@@ -63,10 +63,10 @@ const Header = () => {
         className={`p-1 text-sm`}
       >
         <NavLink
-          style={({ isActive, isPending, isTransitioning }) => {
+          style={({ isActive, isTransitioning }) => {
             return {
               fontWeight: isActive ? "bold" : "",
-              color: isPending ? "red" : "black",
+              color: isActive ? "red" : "black",
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
@@ -82,10 +82,10 @@ const Header = () => {
         className={`p-1 text-sm`}
       >
         <NavLink
-          style={({ isActive, isPending, isTransitioning }) => {
+          style={({ isActive, isTransitioning }) => {
             return {
               fontWeight: isActive ? "bold" : "",
-              color: isPending ? "red" : "black",
+              color: isActive ? "red" : "black",
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
@@ -101,10 +101,10 @@ const Header = () => {
         className={`p-1 text-sm`}
       >
         <NavLink
-          style={({ isActive, isPending, isTransitioning }) => {
+          style={({ isActive, isTransitioning }) => {
             return {
               fontWeight: isActive ? "bold" : "",
-              color: isPending ? "red" : "black",
+              color: isActive ? "red" : "black",
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
@@ -123,10 +123,10 @@ const Header = () => {
         className={`p-1 text-sm`}
       >
         <NavLink
-          style={({ isActive, isPending, isTransitioning }) => {
+          style={({ isActive, isTransitioning }) => {
             return {
               fontWeight: isActive ? "bold" : "",
-              color: isPending ? "red" : "black",
+              color: isActive ? "red" : "black",
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
@@ -145,10 +145,10 @@ const Header = () => {
         className={`p-1 text-sm lg:hidden`}
       >
         <NavLink
-          style={({ isActive, isPending, isTransitioning }) => {
+          style={({ isActive, isTransitioning }) => {
             return {
               fontWeight: isActive ? "bold" : "",
-              color: isPending ? "red" : "black",
+              color: isActive ? "red" : "black",
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
@@ -156,34 +156,15 @@ const Header = () => {
           Register
         </NavLink>
       </Typography>
-      {/*   
-        <Typography
-          as="li"
-          variant="large"
-          color="blue-gray"
-          className={`p-1 text-sm`}
-        >
-        <NavLink
-         style={({ isActive, isPending, isTransitioning }) => {
-            return {
-              fontWeight: isActive ? "bold" : "",
-              color: isPending ? "red" : "black",
-              viewTransitionName: isTransitioning ? "slide" : "",
-            };
-          }}
-        to="/contact" className="flex items-center text-[#150B2BB3]">
-          Contact
-        </NavLink>
-        </Typography> */}
-
 
     </ul>
   );
 
   return (
     <div className="max-h-[768px]  lg:max-w-7xl mx-auto ">
-      <Navbar className="sticky top-0 z-10  py-2 lg:px-8 lg:py-5 shadow-none">
-        <div className="flex items-center justify-between text-blue-gray-900">
+      <Navbar className="sticky top-0 z-10  py-2 lg:px-8 lg:py-5 shadow-none rounded-none
+      bg-white-[0px] border-none">
+        <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Typography
               as="a"

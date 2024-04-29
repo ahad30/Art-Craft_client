@@ -1,7 +1,7 @@
 import logo from "../../../assets/Logo.jpg"
 const Footer = () => {
   return (
-    <footer className="bg-white mt-8">
+    <footer className="mt-8">
     <div className="mx-auto max-w-7xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
       <div className="grid grid-cols-1 text-center lg:text-left gap-8 lg:grid-cols-3">
         <div>
@@ -95,7 +95,7 @@ const Footer = () => {
   
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
           <div className="">
-            <p className="font-medium text-gray-900">Services</p>
+            <p className="font-medium text-gray-700">Services</p>
   
             <ul className="mt-6 space-y-4 text-sm">
               <li>
@@ -117,7 +117,7 @@ const Footer = () => {
           </div>
   
           <div className="">
-            <p className="font-medium text-gray-900">Company</p>
+            <p className="font-medium text-gray-700">Company</p>
   
             <ul className="mt-6 space-y-4 text-sm">
               <li>
@@ -132,7 +132,7 @@ const Footer = () => {
           </div>
   
           <div>
-            <p className="font-medium text-gray-900">Helpful Links</p>
+            <p className="font-medium text-gray-700">Helpful Links</p>
   
             <ul className="mt-6 space-y-4 text-sm">
               <li>
@@ -150,7 +150,7 @@ const Footer = () => {
           </div>
   
           <div className="">
-            <p className="font-medium text-gray-900">Legal</p>
+            <p className="font-medium text-gray-700">Legal</p>
   
             <ul className="mt-6 space-y-4 text-sm">
               <li>
