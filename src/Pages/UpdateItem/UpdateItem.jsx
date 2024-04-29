@@ -30,7 +30,7 @@ const handleUpdateCraftItem = event => {
 
 
 
-    fetch(`http://localhost:5000/updateItem/${_id}`, {
+    fetch(`https://b9a10-server-side-ahad30.vercel.app/updateItem/${_id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json'

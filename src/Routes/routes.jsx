@@ -22,13 +22,15 @@ export const routes = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
-        loader: () => fetch('http://localhost:5000/artCraft')
+        loader: () =>
+         fetch('https://b9a10-server-side-ahad30.vercel.app/artCraft')
       },
 
       {
         path: "/allArt&Craft",
         element:  <AllArtCraftItem/>,
-        loader: () => fetch('http://localhost:5000/artCraft')
+        loader: () => 
+        fetch('https://b9a10-server-side-ahad30.vercel.app/artCraft')
       },
 
       {
@@ -37,7 +39,8 @@ export const routes = createBrowserRouter([
        <PrivateRoute>
         <ArtCraftDetails/>
        </PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/artCraft/${params.id}`)
+        loader: ({ params }) =>
+         fetch(`https://b9a10-server-side-ahad30.vercel.app/artCraft/${params.id}`)
       },
 
 
@@ -63,7 +66,8 @@ export const routes = createBrowserRouter([
        <PrivateRoute>
          <UpdateItem/>
        </PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/artCraft/${params.id}`)
+        loader: ({ params }) =>
+         fetch(`https://b9a10-server-side-ahad30.vercel.app/artCraft/${params.id}`)
       },
 
      

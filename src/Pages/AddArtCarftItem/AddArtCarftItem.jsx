@@ -28,7 +28,7 @@ const AddCraftItem = () => {
   //  console.log(newCraftItem);
 
     // send data to the server
-    fetch('http://localhost:5000/addArtCraftItem', {
+    fetch('https://b9a10-server-side-ahad30.vercel.app/addArtCraftItem', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

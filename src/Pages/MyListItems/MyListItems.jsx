@@ -11,7 +11,7 @@ const MyListItems = () => {
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myArtCraft/${user?.email}`)
+    fetch(`https://b9a10-server-side-ahad30.vercel.app/myArtCraft/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         setItems(data);
@@ -34,7 +34,7 @@ const MyListItems = () => {
       confirmButtonText: 'Yes, delete it!'
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/deleteItem/${_id}`, {
+        fetch(`https://b9a10-server-side-ahad30.vercel.app/deleteItem/${_id}`, {
           method: 'DELETE'
         })
           .then((res) => res.json())
