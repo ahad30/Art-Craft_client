@@ -4,6 +4,7 @@ import Contact from "../Contact/Contact";
 import ArtCraft from "./ArtCraft/ArtCraft";
 import { useLoaderData } from "react-router-dom";
 import Blog from "./Blog/Blog";
+import ArtCraftCategory from "./ArtCraftCategory/ArtCraftCategory";
 
 const HomePage = () => {
 
@@ -16,7 +17,8 @@ const HomePage = () => {
      <Banner/>
      <ArtCraft
      loadedItems = {loadedItems}
-     ></ArtCraft>
+     ></ArtCraft> 
+     <ArtCraftCategory></ArtCraftCategory>
      <Blog></Blog>
      <Contact></Contact>
     </div>

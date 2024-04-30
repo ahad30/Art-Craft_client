@@ -217,7 +217,7 @@ const Header = () => {
             }
             <IconButton
               variant="text"
-              className=" h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              className=" h-6 w-6 text-black hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >
