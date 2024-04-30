@@ -10,7 +10,6 @@ Packages:
 
 Features:
 
-Sure, here are six bullet points for an art and craft drawing website:
 
 1. Diverse Tutorials: Offer a wide range of tutorials covering various art styles, techniques, and mediums such as pencil drawing, watercolor painting, digital art, and more.
 
