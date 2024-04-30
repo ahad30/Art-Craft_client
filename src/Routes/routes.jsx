@@ -12,6 +12,7 @@ import AddArtCarftItem from "../Pages/AddArtCarftItem/AddArtCarftItem";
 import MyListItems from "../Pages/MyListItems/MyListItems";
 import ArtCraftDetails from "../Pages/Home/ArtCraftDetails/ArtCraftDetails";
 import UpdateItem from "../Pages/UpdateItem/UpdateItem";
+import ArtCraftCategoryDetails from "../Pages/Home/ArtCraftCategoryDetails/ArtCraftCategoryDetails";
 
 export const routes = createBrowserRouter([
   {
@@ -47,7 +48,7 @@ export const routes = createBrowserRouter([
         path: "/artCraftSubcategoryDetails/:id",
         element: 
        <PrivateRoute>
-        <ArtCraftDetails/>
+        <ArtCraftCategoryDetails/>
        </PrivateRoute>,
         loader: ({ params }) =>
          fetch(`https://b9a10-server-side-ahad30.vercel.app/artCraftSubcategory/${params.id}`)
