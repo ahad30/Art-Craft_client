@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { CiStar } from "react-icons/ci";
 
 const SingleArtCraft = ({artCraftItem}) => {
-console.log(artCraftItem)
+// console.log(artCraftItem)
 const { _id , image, itemName, subcategoryName, price, rating} = artCraftItem
 
   return (

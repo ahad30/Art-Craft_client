@@ -9,6 +9,8 @@ import ArtCraftCategory from "./ArtCraftCategory/ArtCraftCategory";
 const HomePage = () => {
 
   const loadedItems = useLoaderData();
+  // console.log(loadedItems);
+  
   return (
     <div className="max-w-7xl mx-auto">
      <Helmet>

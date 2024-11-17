@@ -1,10 +1,11 @@
 
 import { useLoaderData } from 'react-router-dom';
 import { CiStar } from 'react-icons/ci';
+import { useEffect, useState } from 'react';
 
 const ArtCraftDetails = () => {
-   
-const artCraft = useLoaderData();
+  
+  const artCraft = useLoaderData();
 
 const { image, itemName, subcategoryName, shortDescription, price, rating, customization, processingTime, stockStatus} = artCraft
 

@@ -45,14 +45,14 @@ export const routes = createBrowserRouter([
       },
       {
 
-        path: "/artCraftSubcategoryDetails/:id",
+        path: "/artCraftSubcategories/:subcategoryName",
         element: 
        <PrivateRoute>
         <ArtCraftCategoryDetails/>
        </PrivateRoute>,
-        loader: ({ params }) =>
-         fetch(`https://b9a10-server-side-ahad30.vercel.app/artCraftSubcategory/${params.id}`)
-      },
+       loader: ({ params }) =>
+        fetch(`https://b9a10-server-side-ahad30.vercel.app/artCraftSubcategories/${params.subcategoryName}`),
+    },
 
 
 
